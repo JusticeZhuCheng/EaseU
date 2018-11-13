@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EASE U</string>
+    <string name="action_settings">Settings</string>
+    <string name="tab_menu_main">主页</string>
+    <string name="tab_menu_setting">设置</string>
+    <string name="tab_menu_history">记录</string>
+
+</resources>

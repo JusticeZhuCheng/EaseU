@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ly_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg_topbar">
+
+        <TextView
+            android:id="@+id/text_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/text_topbar"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/div_white" />
+
+        <ImageButton
+            android:layout_alignParentLeft="true"
+            android:id="@+id/prev_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/pre"
+            android:background="@color/bg_topbar"
+            android:layout_marginLeft="10dp"/>
+
+
+        <ImageButton
+            android:layout_alignParentRight="true"
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/next"
+            android:background="@color/bg_topbar"
+            />
+    </RelativeLayout>
+
+
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/compactcalendar_view"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="2dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_height="250dp"
+        app:compactCalendarTextSize="15sp"
+        app:compactCalendarBackgroundColor="@color/text_bar"
+        app:compactCalendarTextColor="@color/text_btn_newpill"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="#8e8e8e"
+        app:compactCalendarCurrentDayBackgroundColor="#42d1f9"
+        app:compactCalendarMultiEventIndicatorColor="@color/text_bar"
+
+        />
+    <ListView
+        android:id="@+id/litongyu_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

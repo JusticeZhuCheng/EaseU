@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical|center_horizontal">
+    <AnalogClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/analogClock"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_btn_newpill"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@+id/analogClock"
+            android:layout_marginLeft="10dp"
+            android:textSize="40dp"
+            android:text="05：53"
+            android:id="@+id/main_time"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#6c6c6c"
+            android:layout_marginTop="100dp"
+            android:layout_toRightOf="@+id/analogClock"
+            android:layout_marginLeft="15dp"
+            android:textSize="18dp"
+            android:text="2016年6月2日"
+            android:id="@+id/main_date"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#6c6c6c"
+            android:layout_marginTop="130dp"
+            android:layout_toRightOf="@+id/analogClock"
+            android:layout_marginLeft="50dp"
+            android:textSize="18dp"
+            android:text="周四"
+            android:id="@+id/main_day"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="700px"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:textAlignment="center"
+        android:text="设定时间30分钟内未服用药物会短信提醒亲友噢~"
+        android:background="@null"
+        android:textColor="#6c6c6c"
+        android:textSize="15.5dp">
+    </TextView>
+
+    <ListView
+        android:id="@+id/list_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="700px"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:textAlignment="center"
+        android:text="今天接下来没有服药安排了噢~"
+        android:background="@null"
+        android:textColor="#6c6c6c"
+        android:textSize="15.5dp"
+        android:id="@+id/txt_empty1">
+    </TextView>
+
+
+</LinearLayout>

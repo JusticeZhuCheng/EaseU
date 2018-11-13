@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+    android:layout_width="700px"
+    android:layout_height="50dp"
+    android:background="@color/text_bar"
+    android:layout_marginLeft="10px"
+    android:layout_marginRight="10px"
+    android:layout_marginTop="20px"
+    android:layout_gravity="center_horizontal">
+
+    <TextView
+    android:layout_width="100dp"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:layout_marginLeft="50dp"
+    android:textColor="@color/text_btn_newpill"
+    android:textSize="20dp"
+    android:id="@+id/item_pillname"
+        />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:layout_toRightOf="@+id/item_pillname"
+    android:layout_marginLeft="10dp"
+    android:gravity="center_vertical"
+    android:background="@null"
+    android:textColor="#6c6c6c"
+    android:textSize="15.5dp"
+    android:id="@+id/item_symptom"
+        />
+
+    <ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="1dp"
+    android:layout_marginTop="1dp"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:background="@color/text_bar"
+    android:layout_alignParentBottom="true"
+    android:id="@+id/item_delete"
+    android:src="@mipmap/setting_delete" />
+
+    </RelativeLayout>
+</LinearLayout>
